@@ -412,7 +412,7 @@ public class ViewFriendActivity extends AppCompatActivity {
 
     private void SendNotification(JSONObject to) {
         String FCMURL = "https://fcm.googleapis.com/fcm/send";
-        final String Serverkey = "AAAAKGPAh9w:APA91bG7jdXuxoHqXw8XSrMs_IreaE8YW30ee0wLjlG_ZQ8VRZbyos9ZY-bPkRCOnLrDKWOUErtzfFDZqlp6gWelnjdvRTZHsGKXkg1ezKc9KXQZSXpsi62toy6Dzuri602qztvvmNjm";
+        final String Serverkey = "YOUR FCM TOKEN";
         JsonObjectRequest request = new JsonObjectRequest(Request.Method.POST,FCMURL,to, response -> {
             Log.d("notification", "SendNotification R"+response);
         }, error -> {
